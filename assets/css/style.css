@@ -1,0 +1,39 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+canvas{
+    border:1px solid black;
+    display: block;
+    margin-right: 0 auto;
+}
+.bg-image{
+    background-image: url("../../images/flappy-background.png");
+    z-index: -1;
+    position: absolute;
+    height: 105vh;
+    width: 100vw;
+    filter: blur(6px);
+}
+#title{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Jersey 10', sans-serif;
+    font-size: 26px;
+    color: #333;
+}
+#game{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    justify-content: flex-start;
+}
+.prevent-select {
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+    user-select: none;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/flappy.png" type="image/x-icon">
+    <title>Flappy Bird</title>
+</head>
+<body>
+    <!-- <img src="./images/flappy-background.png" class="prevent-select" id="background" alt=""> -->
+    <div class="bg-image"></div>
+    <div id="game">
+        <div id="title" class="prevent-select">
+            <h2>Flappy Bird</h2><img src="./images/flappy.png" alt="">
+            <p>Clique com o mouse para pular</p>
+            <p>Evite acertar os canos</p>
+            <p>Boa sorte!</p>
+        </div>
+        <canvas id="game-canvas" class="prevent-select" width="400" height="600"></canvas>
+        <script src="./assets/js/script.js" type="module" ></script>
+        <script src="./assets/js/sprites.js" type="module" ></script>
+    </div>
+</body>
+</html>
